@@ -1,147 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corpvision – Corporate Category Website WordPress Theme – Just another W3Layouts free WordPress Demo Sites site</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CorpVision - Corporate Business Solutions. We provide vision to your future with expert strategies and creative solutions.">
+  <title>CorpVision – Vision to your Future</title>
 
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
+
+  <!-- ── Header ── -->
+  <header id="siteHeader" class="fixed-top mainHeader">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <h1 class="m-0">
+          <a class="navbar-brand" href="index.html">
+            <span class="fa fa-align-right"></span>Corp Vision
+            <span class="logo">Vision to your Future</span>
+          </a>
+        </h1>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#blog">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="landing.html">Landing Page</a></li>
+                <li><a class="dropdown-item" href="elements.html">Elements Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#subscribe" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <!-- Search & Dark/Light Mode Icons -->
+          <div class="header-search-theme-control d-flex align-items-center ms-lg-3">
+            <div class="search-right px-2">
+              <a href="#search" class="search-btnHeader text-white" title="Search">
+                <span class="fa fa-search" aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="theme-wrapper px-2">
+              <a href="#theme-toggle" class="theme-toggle-btnHeader text-white" title="Toggle Dark/Light Mode">
+                <span class="fa fa-moon-o" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Banner Slider (Bootstrap Carousel) ── -->
+  <div class="bannerWrap">
+    <div id="bannerCarousel" class="carousel slide bannerCarousel" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('img/b1.jpg');">
+          <div class="heroOverlay"></div>
+          <div class="container heroContent">
+            <h1>We will solve your issues our vision to your future</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+            <div class="ctaBtn">
+              <a href="#" class="btnStyle btnPrimary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('img/b2.jpg');">
+          <div class="heroOverlay"></div>
+          <div class="container heroContent">
+            <h1>Embracing success do our best, need best advice</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+            <div class="ctaBtn">
+              <a href="#" class="btnStyle btnPrimary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('img/b3.jpg');">
+          <div class="heroOverlay"></div>
+          <div class="container heroContent">
+            <h1>Digital transformation driven by technology</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+            <div class="ctaBtn">
+              <a href="#" class="btnStyle btnPrimary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item" style="background-image: url('img/b4.jpg');">
+          <div class="heroOverlay"></div>
+          <div class="container heroContent">
+            <h1>For those who believe in leaving a mark</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+            <div class="ctaBtn">
+              <a href="#" class="btnStyle btnPrimary">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- SVG Wave Shape -->
+    <div class="shapeWave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <path fill-opacity="1">
+          <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+        </path>
+      </svg>
+    </div>
+  </div>
+  <!-- ── //Banner Slider ── -->
+
+  <!-- ── About Section ── -->
+  <section class="homeAbout py-5" id="about">
+    <div class="py-5">
+      <div class="container py-lg-5 py-md-3">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="titleSmall">About Us</span>
+            <h3 class="titleBig">We make the best strategies for you, Enhancing your success</h3>
+            <p class="mt-md-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
+            <ul class="serviceList pt-lg-2 mt-4">
+              <li><a href="#"><span class="fa fa-check-circle"></span> UI/UX Design and Development</a></li>
+              <li><a href="#"><span class="fa fa-check-circle"></span> Branding Design and Identity</a></li>
+              <li><a href="#"><span class="fa fa-check-circle"></span> Mobile App Design and Development</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+            <div class="row position-relative">
+              <div class="col-6">
+                <img src="img/a.jpg" alt="About us" class="radiusImage img-fluid">
+              </div>
+              <div class="col-6 mt-4">
+                <img src="img/c1.jpg" alt="About us" class="radiusImage img-fluid mb-md-3 mb-2">
+                <img src="img/c4.jpg" alt="About us" class="radiusImage img-fluid mt-md-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features Section ── -->
+  <section class="featuresSection py-5" id="work">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="row align-items-center">
+        <div class="col-lg-6 pe-lg-5">
+          <h5 class="titleSmall">Every day brings new challenges</h5>
+          <h3 class="titleBig mb-4">Creative agency focused on vision, product and people</h3>
+          <p class="textPara">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+          <a href="#about" class="btnStyle btnPrimary mt-lg-5 mt-4">Discover More</a>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+          <div class="featuresGrid">
+            <div class="featureBox">
+              <img src="img/icon1.png" alt="Our Process" class="img-fluid">
+              <h4><a href="#" class="titleHead">Our Process</a></h4>
+            </div>
+            <div class="featureBox">
+              <img src="img/icon2.png" alt="How We Help" class="img-fluid">
+              <h4><a href="#" class="titleHead">How We Help</a></h4>
+            </div>
+            <div class="featureBox">
+              <img src="img/icon3.png" alt="UI/UX Design" class="img-fluid">
+              <h4><a href="#" class="titleHead">UI/UX Design</a></h4>
+            </div>
+            <div class="featureBox">
+              <img src="img/icon4.png" alt="Creative Ideas" class="img-fluid">
+              <h4><a href="#" class="titleHead">Creative Ideas</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services Section ── -->
+  <section class="servicesSection py-5" id="services">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <h3 class="titleBig text-center">Always there for your care, our Services</h3>
+      <div class="row mt-lg-5 mt-4 text-center justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="serviceCard">
+            <a href="#" class="zoomImg d-block">
+              <img src="img/s1.jpg" alt="Work Expertise" class="img-fluid serviceImage">
+            </a>
+            <div class="serviceInfo">
+              <a href="#" class="serviceTitle">Work Expertise</a>
+              <p class="textPara">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+            </div>
+            <a href="#" class="btnStyle1 mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+          <div class="serviceCard">
+            <a href="#" class="zoomImg d-block">
+              <img src="img/s2.jpg" alt="Product Development" class="img-fluid serviceImage">
+            </a>
+            <div class="serviceInfo">
+              <a href="#" class="serviceTitle">Product Development</a>
+              <p class="textPara">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+            </div>
+            <a href="#" class="btnStyle1 mt-3">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+          <div class="serviceCard">
+            <a href="#" class="zoomImg d-block">
+              <img src="img/s3.jpg" alt="Software Development" class="img-fluid serviceImage">
+            </a>
+            <div class="serviceInfo">
+              <a href="#" class="serviceTitle">Software Development</a>
+              <p class="textPara">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+            </div>
+            <a href="#" class="btnStyle1 mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Gallery Section ── -->
+  <section class="gallerySection py-5" id="gallery">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="text-center mb-5">
+        <h3 class="titleSmall">Our Gallery</h3>
+        <h3 class="titleBig mx-lg-5">Successful projects we've done</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="img/c1.jpg" data-lightbox="gallery" data-title="Project 1" class="galleryItem d-block">
+            <img src="img/c1.jpg" alt="Project 1" class="d-block">
+            <span class="galleryOverlay"></span>
+            <span class="galleryHoverContent">
+              <span class="galleryTitle">Project 1</span>
+              <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="img/c2.jpg" data-lightbox="gallery" data-title="Project 2" class="galleryItem d-block">
+            <img src="img/c2.jpg" alt="Project 2" class="d-block">
+            <span class="galleryOverlay"></span>
+            <span class="galleryHoverContent">
+              <span class="galleryTitle">Project 2</span>
+              <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="img/c3.jpg" data-lightbox="gallery" data-title="Project 3" class="galleryItem d-block">
+            <img src="img/c3.jpg" alt="Project 3" class="d-block">
+            <span class="galleryOverlay"></span>
+            <span class="galleryHoverContent">
+              <span class="galleryTitle">Project 3</span>
+              <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="img/c4.jpg" data-lightbox="gallery" data-title="Project 4" class="galleryItem d-block">
+            <img src="img/c4.jpg" alt="Project 4" class="d-block">
+            <span class="galleryOverlay"></span>
+            <span class="galleryHoverContent">
+              <span class="galleryTitle">Project 4</span>
+              <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="img/c5.jpg" data-lightbox="gallery" data-title="Project 5" class="galleryItem d-block">
+            <img src="img/c5.jpg" alt="Project 5" class="d-block">
+            <span class="galleryOverlay"></span>
+            <span class="galleryHoverContent">
+              <span class="galleryTitle">Project 5</span>
+              <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="img/c6.jpg" data-lightbox="gallery" data-title="Project 6" class="galleryItem d-block">
+            <img src="img/c6.jpg" alt="Project 6" class="d-block">
+            <span class="galleryOverlay"></span>
+            <span class="galleryHoverContent">
+              <span class="galleryTitle">Project 6</span>
+              <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company Logos -->
+      <div class="row companyLogos pt-5 mt-5 justify-content-center align-items-center">
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="img/brand1.png" alt="Brand" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="img/brand6.png" alt="Brand" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="img/brand3.png" alt="Brand" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
+          <img src="img/brand4.png" alt="Brand" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
+          <img src="img/brand5.png" alt="Brand" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Progress Section ── -->
+  <section class="progressSection py-5" id="progress">
+    <div class="py-5">
+      <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="img/about.jpg" alt="Progress" class="radiusImage img-fluid">
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+            <span class="titleSmall">Your success is our success</span>
+            <h3 class="titleBig mb-4 pb-lg-2">Web design, marketing &amp; SEO solutions that get results</h3>
+
+            <div class="progressInfo info1">
+              <h6 class="progressTitle">Marketing <span>80%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progressInfo info2">
+              <h6 class="progressTitle">Responsive Web design <span>95%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient2" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progressInfo info3">
+              <h6 class="progressTitle">Analytics <span>60%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progressInfo info4 mb-0">
+              <h6 class="progressTitle">Web Development <span>85%</span></h6>
+              <div class="progress">
+                <div class="progress-bar gradient4" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials Section (Owl Carousel) ── -->
+  <section class="testimonialsSection py-5" id="testimonials">
+    <div class="py-5">
+      <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+        <h5 class="titleSmall text-center mb-1">Happy Clients Feedback</h5>
+        <h3 class="titleBig text-center mb-sm-5 mb-4">Reviews and Testimonials</h3>
+        <div class="testimonialWidth" style="max-width:900px; margin:auto;">
+          <div id="owlTestimonials" class="owl-carousel owl-theme owlTwo">
+            <!-- Item 1 -->
+            <div class="item">
+              <div class="testimonialCard">
+                <blockquote>
+                  <q>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?</q>
+                </blockquote>
+                <div class="testiDes">
+                  <div class="testImg">
+                    <img src="img/team1.jpg" class="img-fluid" alt="John Wilson">
+                  </div>
+                  <div class="peopl align-self-center">
+                    <h3>John Wilson</h3>
+                    <p class="indentity">Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="item">
+              <div class="testimonialCard">
+                <blockquote>
+                  <q>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</q>
+                </blockquote>
+                <div class="testiDes">
+                  <div class="testImg">
+                    <img src="img/team2.jpg" class="img-fluid" alt="Julia Sakura">
+                  </div>
+                  <div class="peopl align-self-center">
+                    <h3>Julia Sakura</h3>
+                    <p class="indentity">Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item">
+              <div class="testimonialCard">
+                <blockquote>
+                  <q>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</q>
+                </blockquote>
+                <div class="testiDes">
+                  <div class="testImg">
+                    <img src="img/team3.jpg" class="img-fluid" alt="Roy Linderson">
+                  </div>
+                  <div class="peopl align-self-center">
+                    <h3>Roy Linderson</h3>
+                    <p class="indentity">Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="item">
+              <div class="testimonialCard">
+                <blockquote>
+                  <q>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!.</q>
+                </blockquote>
+                <div class="testiDes">
+                  <div class="testImg">
+                    <img src="img/team4.jpg" class="img-fluid" alt="Smith Johnson">
+                  </div>
+                  <div class="peopl align-self-center">
+                    <h3>Smith Johnson</h3>
+                    <p class="indentity">Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Blog Posts Section ── -->
+  <section class="blogSection py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <h5 class="titleSmall text-center mb-1">Latest News</h5>
+      <h3 class="titleBig text-center mb-sm-5 mb-4">Our insight and articles</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header p-0 position-relative">
+              <a href="#" class="zoomImg d-block">
+                <img src="img/blog1.jpg" class="card-img-top" alt="Blog post">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="priceReview d-flex justify-content-between mb-1 align-items-center">
+                <p><a href="#">Startup Business</a></p>
+              </div>
+              <a href="#" class="blogDesc">Hello world!</a>
+            </div>
+            <div class="card-footer">
+              <div class="author align-items-center">
+                <a href="#" class="postAuthor">
+                  <img src="img/team1.jpg" alt="" class="img-fluid rounded-circle">
+                </a>
+                <ul class="blogMeta">
+                  <li>
+                    <span class="metaValue">by</span>
+                    <a href="#">W3Layouts</a>
+                  </li>
                 </ul>
+                <div class="date">
+                  <p>April 1, 2021</p>
                 </div>
+              </div>
             </div>
-        </nav>
-    </header>
-    <section class="My_carousel">
-        <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="./img/b1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header p-0 position-relative">
+              <a href="#" class="zoomImg d-block">
+                <img src="img/blog2.jpg" class="card-img-top" alt="Blog post">
+              </a>
             </div>
+            <div class="card-body">
+              <div class="priceReview d-flex justify-content-between mb-1 align-items-center">
+                <p><a href="#">Startup Business</a></p>
+              </div>
+              <a href="#" class="blogDesc">Companies in NY launched a joint project on a three-tower hall</a>
             </div>
-            <div class="carousel-item">
-            <img src="./img/b2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+            <div class="card-footer">
+              <div class="author align-items-center">
+                <a href="#" class="postAuthor">
+                  <img src="img/team2.jpg" alt="" class="img-fluid rounded-circle">
+                </a>
+                <ul class="blogMeta">
+                  <li>
+                    <span class="metaValue">by</span>
+                    <a href="#">W3Layouts</a>
+                  </li>
+                </ul>
+                <div class="date">
+                  <p>April 1, 2021</p>
+                </div>
+              </div>
             </div>
-            </div>
-            <div class="carousel-item">
-            <img src="./img/b3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <img src="./img/b4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-            </div>
-            </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header p-0 position-relative">
+              <a href="#" class="zoomImg d-block">
+                <img src="img/blog3.jpg" class="card-img-top" alt="Blog post">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="priceReview d-flex justify-content-between mb-1 align-items-center">
+                <p><a href="#">Marketing Strategy</a></p>
+              </div>
+              <a href="#" class="blogDesc">Design breakthrough upgrades the product and ready to launch</a>
+            </div>
+            <div class="card-footer">
+              <div class="author align-items-center">
+                <a href="#" class="postAuthor">
+                  <img src="img/team3.jpg" alt="" class="img-fluid rounded-circle">
+                </a>
+                <ul class="blogMeta">
+                  <li>
+                    <span class="metaValue">by</span>
+                    <a href="#">W3Layouts</a>
+                  </li>
+                </ul>
+                <div class="date">
+                  <p>April 1, 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Newsletter Section ── -->
+  <section class="newsletterSection py-5" id="subscribe">
+    <div class="container py-md-5 py-sm-4 py-2">
+      <div class="bottomInfo">
+        <div class="text-center">
+          <h3 class="titleBig">Let's find out how to work together</h3>
+          <p class="mt-3 pe-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
+        </div>
+        <form action="#" class="subscribeForm mt-5" method="post">
+          <div class="input-group-text"><span class="fa fa-paper-plane"></span></div>
+          <input type="email" name="email" placeholder="Your Email Address" required>
+          <button class="btnStyle btnPrimary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footerMain">
+    <div class="py-5">
+      <div class="container py-md-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <div class="mb-4">
+              <a class="navbar-brand" href="index.html">
+                <span class="fa fa-align-right"></span>
+                Corp Vision
+                <span class="logo">Vision to your Future</span>
+              </a>
+            </div>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+            <div class="socialFooter mt-md-4 mt-3">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pe-lg-5 mb-5 mb-lg-0">
+            <h6 class="footerTitle">Contact Info</h6>
+            <p class="mb-2">Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+            <p class="mb-2">Phone Number : <a href="#">+1(21) 234 4567</a></p>
+            <p class="mb-2">Email : <a href="#">info@example.com</a></p>
+            <p class="mb-2">Support : <a href="#">support@example.com</a></p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 mb-4 mb-lg-0">
+            <h6 class="footerTitle">Categories</h6>
+            <ul>
+              <li><a href="#">Marketing Strategy</a></li>
+              <li><a href="#">Startup Business</a></li>
+              <li><a href="#">Web Development</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6">
+            <h6 class="footerTitle">Quick Links</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <section class="copyrightSection text-center">
+      <div class="container">
+        <p>&copy; 2026 Corp Vision All Rights Reserved |
+          Designed by <a href="#">W3Layouts.</a>
+        </p>
+      </div>
+      <button onclick="topFunction()" id="moveTop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
     </section>
-    <section class="About_us">
-        <div class="container">
-            <div class="row">
-                <div class="col left-about">
-                    <div class="heading">
+  </footer>
 
-                    </div>
-                    <div class="list">
+  <!-- ── Scripts ── -->
+  <!-- jQuery (needed for Owl Carousel & Lightbox) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap 5 Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 
-                    </div>
-                </div>
-                <div class="col right-about">
+  <!-- Owl Carousel Init -->
+  <script>
+    $(document).ready(function () {
+      $("#owlTestimonials").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsiveClass: true,
+        responsive: {
+          0:    { items: 1, nav: false },
+          768:  { items: 1, nav: false },
+          1000: { items: 1, nav: false }
+        }
+      });
+    });
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="Process">
-        <div class="container">
-            <div class="row">
-                <div class="col left-about">
-                    <div class="heading">
+    // Lightbox options
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  </script>
 
-                    </div>
-                    <div class="list">
-
-                    </div>
-                </div>
-                <div class="col right-about">
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <div class="heading">
-
-            </div>
-            <div class="cow">
-                <div class="col">
-
-                </div>
-                div.col
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
