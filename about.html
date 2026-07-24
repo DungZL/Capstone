@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="About CorpVision - Learn about our company, team, and creative solutions for your business success.">
+  <meta name="description"
+    content="About CorpVision - Learn about our company, team, and creative solutions for your business success.">
   <title>About Us – CorpVision</title>
 
   <!-- Google Fonts -->
@@ -20,7 +22,7 @@
 
 <body>
 
-  <!-- ── Header ── -->
+  <!-- Header -->
   <header id="siteHeader" class="fixed-top mainHeader">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -31,9 +33,8 @@
           </a>
         </h1>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarContent" aria-controls="navbarContent"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -49,7 +50,8 @@
               <a href="service.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Pages
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,15 +65,15 @@
               <a href="index.html#subscribe" class="nav-link">Contact</a>
             </li>
           </ul>
-          <!-- Search & Dark/Light Mode Icons -->
-          <div class="header-search-theme-control d-flex align-items-center ms-lg-3">
-            <div class="search-right px-2">
-              <a href="#search" class="search-btnHeader text-white" title="Search">
+          <!-- Search & Theme Controls -->
+          <div class="headerControl d-flex align-items-center ms-lg-3">
+            <div class="searchRight px-2">
+              <a href="#search" class="searchHeader text-white" title="Search">
                 <span class="fa fa-search" aria-hidden="true"></span>
               </a>
             </div>
-            <div class="theme-wrapper px-2">
-              <a href="#theme-toggle" class="theme-toggle-btnHeader text-white" title="Toggle Dark/Light Mode">
+            <div class="themeWrapper px-2">
+              <a href="#theme-toggle" class="themeHeader text-white" id="themeBtn" title="Toggle Dark/Light Mode">
                 <span class="fa fa-moon-o" aria-hidden="true"></span>
               </a>
             </div>
@@ -81,51 +83,54 @@
     </div>
   </header>
 
-  <!-- ── Breadcrumb Banner ── -->
-  <section class="breadcrumbBanner py-5" style="background-image: url('img/b1.jpg');">
+  <!-- Breadcrumb Banner -->
+  <section class="breadcrumbBanner position-relative">
     <div class="heroOverlay"></div>
-    <div class="container py-lg-5 py-md-4">
-      <div class="pt-md-5 pt-4">
-        <h2>About Us</h2>
-        <p class="innerPagePara mt-2">Experience you can trust, service you can count on.</p>
+    <div class="container py-lg-5 py-md-4 py-3">
+      <div class="heroContent pt-5">
+        <h2 class="mt-4">About Us</h2>
+        <p class="pagePara mt-2">Experience you can trust, service you can count on.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── About Section ── -->
+  <!-- About Section -->
   <section class="aboutSection py-5" id="about">
     <div class="py-5">
       <div class="container py-lg-5 py-md-4 py-2">
         <div class="row align-items-center">
           <div class="col-lg-6 pe-lg-5">
-            <div class="aboutImgWrapper position-relative">
+            <div class="imgWrapper position-relative">
               <div class="bgShape"></div>
               <img src="img/about2.jpg" alt="About us" class="img-fluid aboutImg">
-              <div class="imgInfoBox">
-                <div class="imgInfoInner">
-                  <h6 class="imgInfoTitle">25+</h6>
+              <div class="infoBox">
+                <div class="infoInner">
+                  <h6 class="infoTitle">25+</h6>
                   <p>Years of <br>Experience.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 mt-lg-0 mt-5 aboutRightFaq align-self-center">
+          <div class="col-lg-6 mt-lg-0 mt-5 aboutFaq align-self-center">
             <h5 class="titleSmall mb-2">ABOUT OUR COMPANY</h5>
             <h3 class="titleBig">We are the next generation of the business world, creative solutions</h3>
             <h4 class="mt-4">Over 25 years, We complete every project with extra care as customer needs.</h4>
-            <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem ad.</p>
+            <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+              tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur
+              voluptatem ad.</p>
             <div class="d-flex align-items-center mt-md-5 mt-4">
               <a class="btnStyle btnPrimary me-4" href="#">Read More</a>
 
-              <a href="#smallDialog1" class="popup-with-zoom-anim playViewCircle">
-                <span class="playIconOutline">
+              <a href="#smallDialog1" class="popup-with-zoom-anim playCircle">
+                <span class="playOutline">
                   <span class="fa fa-play"></span>
                 </span>
               </a>
             </div>
             <!-- Video popup dialog -->
             <div id="smallDialog1" class="zoom-anim-dialog mfp-hide">
-              <iframe src="https://www.youtube.com/embed/2N247cY2bEw" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/2N247cY2bEw" allow="autoplay; fullscreen"
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -164,7 +169,7 @@
     </div>
   </section>
 
-  <!-- ── Stats with Images Section ── -->
+  <!-- Stats Section -->
   <section class="statsSection py-5">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="row align-items-center">
@@ -194,28 +199,30 @@
     </div>
   </section>
 
-  <!-- ── Cover / Parallax Section ── -->
+  <!-- Cover Parallax Section -->
   <section class="coverSection py-5" id="cover" style="background-image: url('img/bg1.jpg');">
     <div class="container px-0 py-lg-5 py-md-4 py-2">
       <div class="position-relative">
         <div class="heading mx-auto text-center">
           <h3 class="titleBig">We are the next generation of the business world, creative solutions</h3>
-          <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui officia sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+          <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui officia sed deserunt
+            mollit anim id est laborum mollit anim id est nulla.</p>
           <a href="#smallDialog2" class="popup-with-zoom-anim playView text-center mt-4 d-inline-block">
-            <span class="videoPlayIcon">
-              <span class="fa fa-play"></span>
+            <span class="playBtn">
+              <i class="fa fa-play"></i>
             </span>
           </a>
         </div>
         <!-- Video popup dialog -->
         <div id="smallDialog2" class="zoom-anim-dialog mfp-hide">
-          <iframe src="https://www.youtube.com/embed/2N247cY2bEw" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/2N247cY2bEw" frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Team Section ── -->
+  <!-- Team Section -->
   <section class="teamSection py-5" id="team">
     <div class="container py-lg-5 py-md-4 py-2">
       <h5 class="titleSmall text-center">Our Professionals</h5>
@@ -238,7 +245,9 @@
                 </div>
               </div>
             </div>
-            <a href="#"><h6 class="teamTitle">Amelia Jessica</h6></a>
+            <a href="#">
+              <h6 class="teamTitle">Amelia Jessica</h6>
+            </a>
             <p>Designer</p>
           </div>
         </div>
@@ -259,7 +268,9 @@
                 </div>
               </div>
             </div>
-            <a href="#"><h6 class="teamTitle">Elizabeth Tracy</h6></a>
+            <a href="#">
+              <h6 class="teamTitle">Elizabeth Tracy</h6>
+            </a>
             <p>Photographer</p>
           </div>
         </div>
@@ -280,7 +291,9 @@
                 </div>
               </div>
             </div>
-            <a href="#"><h6 class="teamTitle">Charlotte Ava</h6></a>
+            <a href="#">
+              <h6 class="teamTitle">Charlotte Ava</h6>
+            </a>
             <p>Designer</p>
           </div>
         </div>
@@ -301,7 +314,9 @@
                 </div>
               </div>
             </div>
-            <a href="#"><h6 class="teamTitle">Emma Susan</h6></a>
+            <a href="#">
+              <h6 class="teamTitle">Emma Susan</h6>
+            </a>
             <p>Designer</p>
           </div>
         </div>
@@ -309,8 +324,8 @@
     </div>
   </section>
 
-  <!-- ── Why Choose Us Section ── -->
-  <section class="whyChooseSection py-5" id="features">
+  <!-- Why Choose Us Section -->
+  <section class="whyChoose py-5" id="features">
     <div class="py-lg-5 py-md-4">
       <div class="container">
         <div class="text-center">
@@ -371,14 +386,15 @@
     </div>
   </section>
 
-  <!-- ── CTA Section ── -->
+  <!-- CTA Section -->
   <section class="ctaSection py-5">
     <div class="container py-md-5 py-sm-4 py-2">
       <div class="row">
         <div class="col-lg-8">
           <div>
             <h3 class="titleBig">Let's talk about your project and see how we can work together</h3>
-            <p class="mt-3 pe-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
+            <p class="mt-3 pe-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit
+              amet. Lorem ipsum dolor sit amet elit.</p>
           </div>
         </div>
         <div class="col-lg-4 align-self-center text-lg-end">
@@ -390,7 +406,7 @@
     </div>
   </section>
 
-  <!-- ── Footer ── -->
+  <!-- Footer -->
   <footer class="footerMain">
     <div class="py-5">
       <div class="container py-md-4">
@@ -403,7 +419,8 @@
                 <span class="logo">Vision to your Future</span>
               </a>
             </div>
-            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+              Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
             <div class="socialFooter mt-md-4 mt-3">
               <a href="#"><span class="fa fa-facebook"></span></a>
               <a href="#"><span class="fa fa-twitter"></span></a>
@@ -442,7 +459,7 @@
     <section class="copyrightSection text-center">
       <div class="container">
         <p>&copy; 2026 Corp Vision All Rights Reserved |
-          Designed by <a href="#">W3Layouts.</a>
+          Designed by <a href="#">CorpVision.</a>
         </p>
       </div>
       <button onclick="topFunction()" id="moveTop" title="Go to top">
@@ -451,17 +468,12 @@
     </section>
   </footer>
 
-  <!-- ── Scripts ── -->
-  <!-- jQuery (needed for Magnific Popup) -->
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- Bootstrap 5 Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Magnific Popup -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <!-- Custom JS -->
   <script src="js/about.js"></script>
 
-  <!-- Magnific Popup Init -->
   <script>
     $(document).ready(function () {
       $('.popup-with-zoom-anim').magnificPopup({
@@ -479,4 +491,5 @@
   </script>
 
 </body>
+
 </html>

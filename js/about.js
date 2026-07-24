@@ -1,37 +1,37 @@
-// ── Scroll to Top Button ──
+
 window.addEventListener('scroll', function () {
-  var moveTop = document.getElementById('moveTop');
-  if (moveTop) {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      moveTop.style.display = 'block';
-    } else {
-      moveTop.style.display = 'none';
+    var topBtn = document.getElementById('moveTop');
+    if (topBtn) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topBtn.style.display = 'block';
+        } else {
+            topBtn.style.display = 'none';
+        }
     }
-  }
 });
 
 function topFunction() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ── Navbar Scroll Effect ──
+
 window.addEventListener('scroll', function () {
-  var header = document.getElementById('siteHeader');
-  if (header) {
-    if (window.scrollY >= 80) {
-      header.classList.add('navFixed');
-    } else {
-      header.classList.remove('navFixed');
+    var siteHeader = document.getElementById('siteHeader');
+    if (siteHeader) {
+        if (window.scrollY >= 80) {
+            siteHeader.classList.add('navFixed');
+        } else {
+            siteHeader.classList.remove('navFixed');
+        }
     }
-  }
 });
 
-// ── Navbar Toggle Body Scroll Lock ──
+
 document.addEventListener('DOMContentLoaded', function () {
-  var toggler = document.querySelector('.navbar-toggler');
-  if (toggler) {
-    toggler.addEventListener('click', function () {
-      document.body.classList.toggle('noScroll');
-    });
-  }
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    if (navbarToggler) {
+        navbarToggler.addEventListener('click', function () {
+            document.body.classList.toggle('noScroll');
+        });
+    }
 });

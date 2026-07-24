@@ -24,7 +24,7 @@
 
 <body>
 
-  <!-- ── Header ── -->
+  <!-- Header -->
   <header id="siteHeader" class="fixed-top mainHeader">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,9 +35,8 @@
           </a>
         </h1>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarContent" aria-controls="navbarContent"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -53,7 +52,8 @@
               <a href="service.html" class="nav-link active">Services</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Pages
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -67,15 +67,16 @@
               <a href="index.html#subscribe" class="nav-link">Contact</a>
             </li>
           </ul>
-          <!-- Search & Dark/Light Mode Icons -->
-          <div class="header-search-theme-control d-flex align-items-center ms-lg-3">
-            <div class="search-right px-2">
-              <a href="#search" class="search-btnHeader text-white" id="searchBtn" title="Search">
+          <!-- Search & Theme Controls -->
+          <div class="headerControl d-flex align-items-center ms-lg-3">
+            <div class="searchRight px-2">
+              <a href="#search" class="searchHeader text-white" id="searchBtn" title="Search">
                 <span class="fa fa-search" aria-hidden="true"></span>
               </a>
             </div>
-            <div class="theme-wrapper px-2">
-              <a href="#theme-toggle" class="theme-toggle-btnHeader text-white" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+            <div class="themeWrapper px-2">
+              <a href="#theme-toggle" class="themeHeader text-white" id="themeBtn"
+                title="Toggle Dark/Light Mode">
                 <span class="fa fa-moon-o" id="themeIcon" aria-hidden="true"></span>
               </a>
             </div>
@@ -86,34 +87,34 @@
   </header>
 
   <!-- Fullscreen Search Overlay -->
-  <div class="search-overlay" id="searchOverlay">
-    <button class="search-close-btn" id="searchCloseBtn" aria-label="Close search">&times;</button>
-    <div class="search-box-container">
-      <form action="#" method="GET" class="search-form">
-        <input type="text" class="search-input-field" placeholder="Start Typing..." required>
-        <button type="submit" class="search-submit-btn">
+  <div class="searchOverlay" id="searchOverlay">
+    <button class="searchClose" id="searchClose" aria-label="Close search">&times;</button>
+    <div class="searchContainer">
+      <form action="#" method="GET" class="searchForm">
+        <input type="text" class="searchInput" placeholder="Start Typing..." required>
+        <button type="submit" class="searchSubmit">
           <span class="fa fa-search"></span>
         </button>
       </form>
     </div>
   </div>
 
-  <!-- ── Breadcrumb / Hero Section ── -->
-  <section class="service-breadcrumb text-center">
-    <div class="breadcrumb-bg py-5">
+  <!-- Breadcrumb Hero Section -->
+  <section class="serviceBreadcrumb text-center">
+    <div class="breadcrumbBg py-5">
       <div class="container py-lg-5 py-md-4">
         <div class="pt-md-5 pt-4">
-          <h2 class="breadcrumb-title text-white fw-bold">Services</h2>
-          <p class="inner-page-para mt-2 text-white-50 fs-5">We work with bold brands that we believe in</p>
+          <h2 class="breadcrumbTitle text-white fw-bold">Services</h2>
+          <p class="pagePara mt-2 text-white-50 fs-5">We work with bold brands that we believe in</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Section 1: Check Our Services ── -->
-  <section class="w3l-features py-5" id="services-intro">
+  <!--Check Our Services -->
+  <section class="featuresSection py-5" id="servicesIntro">
     <div class="container py-lg-5 py-md-4 py-2">
-      <div class="title-content text-center mb-md-5 mb-4">
+      <div class="titleContent text-center mb-md-5 mb-4">
         <span class="titleSmall">Check our services</span>
         <h3 class="titleBig mx-lg-5">Introduce our best and reliable services for all your business</h3>
       </div>
@@ -121,17 +122,19 @@
       <!-- Feature Row 1 -->
       <div class="row align-items-stretch g-4 mb-lg-5 mb-4">
         <div class="col-lg-6">
-          <div class="service-grid-left text-center">
-            <div class="service-icon mb-3">
+          <div class="gridLeft text-center">
+            <div class="serviceIcon mb-3">
               <img src="img/icon1.png" alt="Product Design Icon" width="55" class="img-fluid">
             </div>
-            <h3 class="title-service mb-3">Product Design</h3>
-            <p class="textPara mb-4">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit, dolor eget ex.</p>
+            <h3 class="titleService mb-3">Product Design</h3>
+            <p class="textPara mb-4">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est.
+              Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit, dolor eget ex.
+            </p>
             <a href="#url" class="btnStyle btnPrimary">Know more</a>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="service-grid-right">
+          <div class="gridRight">
             <img src="img/s1.jpg" alt="Product Design" class="img-fluid radiusImage shadow-sm w-100">
           </div>
         </div>
@@ -140,17 +143,19 @@
       <!-- Feature Row 2 -->
       <div class="row align-items-stretch g-4">
         <div class="col-lg-6 order-lg-1 order-2">
-          <div class="service-grid-right">
+          <div class="gridRight">
             <img src="img/s2.jpg" alt="E-commerce Design" class="img-fluid radiusImage shadow-sm w-100">
           </div>
         </div>
         <div class="col-lg-6 order-lg-2 order-1">
-          <div class="service-grid-left text-center">
-            <div class="service-icon mb-3">
+          <div class="gridLeft text-center">
+            <div class="serviceIcon mb-3">
               <img src="img/icon2.png" alt="E-commerce Design Icon" width="55" class="img-fluid">
             </div>
-            <h3 class="title-service mb-3">E-commerce Design</h3>
-            <p class="textPara mb-4">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit, dolor eget ex.</p>
+            <h3 class="titleService mb-3">E-commerce Design</h3>
+            <p class="textPara mb-4">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est.
+              Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit, dolor eget ex.
+            </p>
             <a href="#url" class="btnStyle btnPrimary">Know more</a>
           </div>
         </div>
@@ -159,21 +164,21 @@
     </div>
   </section>
 
-  <!-- ── Section 2: What Industries We Serve ── -->
-  <section class="w3l-aboutblock1 py-5" id="industries">
+  <!--What Industries We Serve -->
+  <section class="aboutBlock py-5" id="industries">
     <div class="container py-lg-5 py-md-4 py-2">
-      <div class="title-content text-center mb-md-5 mb-4">
+      <div class="titleContent text-center mb-md-5 mb-4">
         <span class="titleSmall">Beautifully crafted creative solutions</span>
         <h3 class="titleBig mx-lg-5">What industries we serve?</h3>
       </div>
       <div class="row justify-content-center g-4">
-        
+
         <!-- Card 1 -->
         <div class="col-lg-4 col-md-6">
-          <div class="area-box">
+          <div class="areaBox">
             <i class="fa fa-money" aria-hidden="true"></i>
-            <div class="area-box-info">
-              <h4><a href="#url" class="title-head">Investment Planning</a></h4>
+            <div class="boxInfo">
+              <h4><a href="#url" class="titleHead">Investment Planning</a></h4>
               <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
             </div>
           </div>
@@ -181,10 +186,10 @@
 
         <!-- Card 2 -->
         <div class="col-lg-4 col-md-6">
-          <div class="area-box">
+          <div class="areaBox">
             <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            <div class="area-box-info">
-              <h4><a href="#url" class="title-head">Commercial Projects</a></h4>
+            <div class="boxInfo">
+              <h4><a href="#url" class="titleHead">Commercial Projects</a></h4>
               <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
             </div>
           </div>
@@ -192,10 +197,10 @@
 
         <!-- Card 3 -->
         <div class="col-lg-4 col-md-6">
-          <div class="area-box">
+          <div class="areaBox">
             <i class="fa fa-building-o" aria-hidden="true"></i>
-            <div class="area-box-info">
-              <h4><a href="#url" class="title-head">Banking & Finance</a></h4>
+            <div class="boxInfo">
+              <h4><a href="#url" class="titleHead">Banking & Financial</a></h4>
               <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
             </div>
           </div>
@@ -203,10 +208,10 @@
 
         <!-- Card 4 -->
         <div class="col-lg-4 col-md-6">
-          <div class="area-box">
-            <i class="fa fa-clone" aria-hidden="true"></i>
-            <div class="area-box-info">
-              <h4><a href="#url" class="title-head">Competitive Research</a></h4>
+          <div class="areaBox">
+            <i class="fa fa-hospital-o" aria-hidden="true"></i>
+            <div class="boxInfo">
+              <h4><a href="#url" class="titleHead">Healthcare & Medical</a></h4>
               <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
             </div>
           </div>
@@ -214,10 +219,10 @@
 
         <!-- Card 5 -->
         <div class="col-lg-4 col-md-6">
-          <div class="area-box">
-            <i class="fa fa-code" aria-hidden="true"></i>
-            <div class="area-box-info">
-              <h4><a href="#url" class="title-head">International Business</a></h4>
+          <div class="areaBox">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <div class="boxInfo">
+              <h4><a href="#url" class="titleHead">Educational Institutions</a></h4>
               <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
             </div>
           </div>
@@ -225,10 +230,10 @@
 
         <!-- Card 6 -->
         <div class="col-lg-4 col-md-6">
-          <div class="area-box">
-            <i class="fa fa-bar-chart" aria-hidden="true"></i>
-            <div class="area-box-info">
-              <h4><a href="#url" class="title-head">Strategic Approach</a></h4>
+          <div class="areaBox">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <div class="boxInfo">
+              <h4><a href="#url" class="titleHead">Software & Technology</a></h4>
               <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
             </div>
           </div>
@@ -238,52 +243,52 @@
     </div>
   </section>
 
-  <!-- ── Section 3: Contact / Quote Section ── -->
-  <section class="w3l-quote-6" id="quote">
-    <div class="quote-info py-5">
+  <!--Contact / Quote Section -->
+  <section class="quoteBlock" id="quote">
+    <div class="quoteInfo py-5">
       <div class="container py-lg-5 py-md-4 py-2">
         <div class="row align-items-center">
-          
+
           <!-- Left Info Column -->
           <div class="col-lg-6 pe-lg-5 mb-lg-0 mb-5">
             <span class="titleSmall text-light opacity-75 mb-2">Innovative technology</span>
             <h3 class="titleBig text-white mb-4">We use latest technologies that are proven and practical</h3>
-            
+
             <div class="mt-4">
               <!-- Info 1 -->
-              <div class="quote-sec-info">
-                <div class="appyl-sub-icon">
+              <div class="quoteItem">
+                <div class="subIcon">
                   <span class="fa fa-map"></span>
                 </div>
-                <div class="appyl-sub-icon-info">
+                <div class="iconInfo">
                   <h5>Our Location:</h5>
                   <p>Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
                 </div>
               </div>
 
               <!-- Info 2 -->
-              <div class="quote-sec-info">
-                <div class="appyl-sub-icon">
+              <div class="quoteItem">
+                <div class="subIcon">
                   <span class="fa fa-phone"></span>
                 </div>
-                <div class="appyl-sub-icon-info">
+                <div class="iconInfo">
                   <h5>Phone Numbers</h5>
                   <p>
-                    <a href="tel:+1425897555">+142 5897555</a>, 
+                    <a href="tel:+1425897555">+142 5897555</a>,
                     <a href="tel:+1425897566">+142 5897566</a>
                   </p>
                 </div>
               </div>
 
               <!-- Info 3 -->
-              <div class="quote-sec-info">
-                <div class="appyl-sub-icon">
+              <div class="quoteItem">
+                <div class="subIcon">
                   <span class="fa fa-envelope-o"></span>
                 </div>
-                <div class="appyl-sub-icon-info">
+                <div class="iconInfo">
                   <h5>Email Addresses</h5>
                   <p>
-                    <a href="mailto:info@example.com">info@example.com</a>, 
+                    <a href="mailto:info@example.com">info@example.com</a>,
                     <a href="mailto:support@example.com">support@example.com</a>
                   </p>
                 </div>
@@ -293,20 +298,27 @@
 
           <!-- Right Form Column -->
           <div class="col-lg-6">
-            <div class="quote-form">
-              <form id="contactQuoteForm" action="#" method="post">
-                <h3 class="title-service mb-2">Lets talk about your project</h3>
-                <p class="mb-4 textPara fs-6">We have made it easy for clients to reach us and get their solutions weaved</p>
+            <div class="quoteForm">
+              <form id="contactForm" action="#" method="post">
+                <h3 class="titleService mb-2">Lets talk about your project</h3>
+                <p class="mb-4 textPara fs-6">We have made it easy for clients to reach us and get their solutions
+                  weaved</p>
                 <div class="form-group mb-3">
-                  <input type="text" class="form-control" name="w3lName" placeholder="Your Name*" required>
+                  <input type="text" class="form-control" name="userName" placeholder="Your Name*" required>
                 </div>
                 <div class="form-group mb-3">
-                  <input type="email" class="form-control" name="w3lSender" placeholder="Email*" required>
+                  <input type="email" class="form-control" name="userEmail" placeholder="Email*" required>
                 </div>
                 <div class="form-group mb-4">
-                  <textarea class="form-control" name="w3lMessage" placeholder="Message" rows="4"></textarea>
+                  <textarea class="form-control" name="userMessage" placeholder="Message" rows="4"></textarea>
                 </div>
-                <button type="submit" class="btnStyle btnPrimary w-100">Get Started</button>
+                <div class="cow">
+                  <div class="col-5">
+                    <button type="submit" class="btnStyle btnPrimary w-100">Get Started</button>
+                  </div>
+                  <div class="col-7">
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -316,45 +328,48 @@
     </div>
   </section>
 
-  <!-- ── Section 4: More Services ── -->
-  <section class="w3l-features py-5" id="more-services">
+  <!-- More Services -->
+  <section class="featuresSection py-5" id="moreServices">
     <div class="container py-lg-5 py-md-4 py-2">
-      <div class="title-content text-center mb-md-5 mb-4">
+      <div class="titleContent text-center mb-md-5 mb-4">
         <span class="titleSmall">Beautifully crafted creative solutions</span>
         <h3 class="titleBig mx-lg-5">Services that create identities, build brands, and get results</h3>
       </div>
       <div class="row g-4 justify-content-center">
-        
+
         <!-- Card 1 -->
         <div class="col-lg-4 col-md-6">
-          <div class="box-wrap">
+          <div class="boxWrap">
             <div class="icon mb-4">
               <img src="img/icon1.png" alt="Business Analysis Icon" class="img-fluid">
             </div>
-            <h4><a href="#url" class="title-head mb-3 d-block">Business Analysis</a></h4>
-            <p class="textPara fs-6 mb-0">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.</p>
+            <h4><a href="#url" class="titleHead mb-3 d-block">Business Analysis</a></h4>
+            <p class="textPara fs-6 mb-0">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget
+              ex fermentum.</p>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col-lg-4 col-md-6">
-          <div class="box-wrap">
+          <div class="boxWrap">
             <div class="icon mb-4">
               <img src="img/icon2.png" alt="Project Reporting Icon" class="img-fluid">
             </div>
-            <h4><a href="#url" class="title-head mb-3 d-block">Project Reporting</a></h4>
-            <p class="textPara fs-6 mb-0">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.</p>
+            <h4><a href="#url" class="titleHead mb-3 d-block">Project Reporting</a></h4>
+            <p class="textPara fs-6 mb-0">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget
+              ex fermentum.</p>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="col-lg-4 col-md-6">
-          <div class="box-wrap">
+          <div class="boxWrap">
             <div class="icon mb-4">
               <img src="img/icon3.png" alt="Security Enhanced Icon" class="img-fluid">
             </div>
-            <h4><a href="#url" class="title-head mb-3 d-block">Security Enhanced</a></h4>
-            <p class="textPara fs-6 mb-0">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.</p>
+            <h4><a href="#url" class="titleHead mb-3 d-block">Security Enhanced</a></h4>
+            <p class="textPara fs-6 mb-0">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget
+              ex fermentum.</p>
           </div>
         </div>
 
@@ -362,7 +377,7 @@
     </div>
   </section>
 
-  <!-- ── Footer ── -->
+  <!-- Footer -->
   <footer class="footerMain">
     <div class="py-5">
       <div class="container py-md-4">
@@ -375,7 +390,8 @@
                 <span class="logo">Vision to your Future</span>
               </a>
             </div>
-            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+              Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
             <div class="socialFooter mt-md-4 mt-3">
               <a href="#"><span class="fa fa-facebook"></span></a>
               <a href="#"><span class="fa fa-twitter"></span></a>
@@ -414,7 +430,7 @@
     <section class="copyrightSection text-center">
       <div class="container">
         <p>&copy; 2026 Corp Vision All Rights Reserved |
-          Designed by <a href="#">W3Layouts.</a>
+          Designed by <a href="#">CorpVision.</a>
         </p>
       </div>
       <button onclick="topFunction()" id="moveTop" title="Go to top">
@@ -423,7 +439,7 @@
     </section>
   </footer>
 
-  <!-- CDN Scripts -->
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/service.js"></script>

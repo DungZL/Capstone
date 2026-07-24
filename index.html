@@ -23,7 +23,7 @@
 
 <body>
 
-  <!-- ── Header ── -->
+  <!-- Header -->
   <header id="siteHeader" class="fixed-top mainHeader">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -54,25 +54,25 @@
                 Pages
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#blog">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
                 <li><a class="dropdown-item" href="#">404 Page</a></li>
                 <li><a class="dropdown-item" href="#">Landing Page</a></li>
                 <li><a class="dropdown-item" href="#">Elements Page</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#subscribe" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">Contact</a>
             </li>
           </ul>
-          <!-- Search & Dark/Light Mode Icons -->
-          <div class="header-search-theme-control d-flex align-items-center ms-lg-3">
-            <div class="search-right px-2">
-              <a href="" class="search-btnHeader text-white" title="Search">
+          <!-- Search & Theme Controls -->
+          <div class="headerControl d-flex align-items-center ms-lg-3">
+            <div class="searchRight px-2">
+              <a href="" class="searchHeader text-white" title="Search">
                 <span class="fa fa-search" aria-hidden="true"></span>
               </a>
             </div>
-            <div class="theme-wrapper px-2">
-              <a href="" class="theme-toggle-btnHeader text-white" title="Toggle Dark/Light Mode">
+            <div class="themeWrapper px-2">
+              <a href="" class="themeHeader text-white" id="themeBtn" title="Toggle Dark/Light Mode">
                 <span class="fa fa-moon-o" aria-hidden="true"></span>
               </a>
             </div>
@@ -82,45 +82,48 @@
     </div>
   </header>
 
-  <!-- ── Banner Slider── -->
+  <!-- Banner Slider -->
   <div class="bannerWrap">
     <div id="bannerCarousel" class="carousel slide bannerCarousel" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url('./img/b1.jpg');">
+        <div class="carousel-item active" style="background-image: url('img/b1.jpg');">
           <div class="heroOverlay"></div>
           <div class="container heroContent">
-            <h1>We will solve your issues our vision to your future</h1>
+            <h1>We Help You Build Brand & Business</h1>
             <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
             <div class="ctaBtn">
-              <a href="#" class="btnStyle btnPrimary">Learn More</a>
+              <a href="#" class="btnStyle btnPrimary">Contact Now</a>
             </div>
           </div>
         </div>
+
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url('./img/b2.jpg');">
+        <div class="carousel-item" style="background-image: url('img/b2.jpg');">
           <div class="heroOverlay"></div>
           <div class="container heroContent">
-            <h1>Embracing success do our best, need best advice</h1>
+            <h1>Work Entirely Dedicated To Elevating Brands</h1>
             <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
             <div class="ctaBtn">
-              <a href="#" class="btnStyle btnPrimary">Get Started</a>
+              <a href="#" class="btnStyle btnPrimary">Contact Now</a>
             </div>
           </div>
         </div>
+
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url('./img/b3.jpg');">
+        <div class="carousel-item" style="background-image: url('img/b3.jpg');">
           <div class="heroOverlay"></div>
           <div class="container heroContent">
-            <h1>Digital transformation driven by technology</h1>
+            <h1>We Tech-enable Businesses To Reach Scale</h1>
             <p class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
             <div class="ctaBtn">
-              <a href="#" class="btnStyle btnPrimary">Learn More</a>
+              <a href="#" class="btnStyle btnPrimary">Contact Now</a>
             </div>
           </div>
         </div>
+
         <!-- Slide 4 -->
-        <div class="carousel-item" style="background-image: url('./img/b4.jpg');">
+        <div class="carousel-item" style="background-image: url('img/b4.jpg');">
           <div class="heroOverlay"></div>
           <div class="container heroContent">
             <h1>For those who believe in leaving a mark</h1>
@@ -132,18 +135,18 @@
         </div>
       </div>
       <!-- Carousel Controls -->
-      <div class="banner-carousel-controls">
-        <button class="carousel-control-prev slick-prev slick-arrow" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev" aria-label="Previous">
+      <div class="bannerControl">
+        <button class="carousel-control-prev slickPrev slickArrow" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev" aria-label="Previous">
           <span class="fa fa-arrow-left" aria-hidden="true"></span>
         </button>
-        <button class="carousel-control-next slick-next slick-arrow" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next" aria-label="Next">
+        <button class="carousel-control-next slickNext slickArrow" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next" aria-label="Next">
           <span class="fa fa-arrow-right" aria-hidden="true"></span>
         </button>
       </div>
     </div>
 
     <!-- Animated Wave Shape -->
-    <div class="hero-overlay-shape">
+    <div class="heroShape">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
         <path fill-opacity="1">
           <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
@@ -152,7 +155,7 @@
     </div>
   </div>
 
-  <!-- ── About Section ── -->
+  <!-- About Section -->
   <section class="homeAbout py-5" id="about">
     <div class="py-5">
       <div class="container py-lg-5 py-md-3">
@@ -183,7 +186,7 @@
     </div>
   </section>
 
-  <!-- ── Features Section ── -->
+  <!-- Features Section -->
   <section class="featuresSection py-5" id="work">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="row align-items-center">
@@ -217,7 +220,7 @@
     </div>
   </section>
 
-  <!-- ── Services Section ── -->
+  <!-- Services Section -->
   <section class="servicesSection py-5" id="services">
     <div class="container py-lg-5 py-md-4 py-2">
       <h3 class="titleBig text-center">Always there for your care, our Services</h3>
@@ -262,7 +265,7 @@
     </div>
   </section>
 
-  <!-- ── Gallery Section ── -->
+  <!-- Gallery Section -->
   <section class="gallerySection py-5" id="gallery">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="text-center mb-5">
@@ -272,62 +275,62 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="img/c1.jpg" data-lightbox="gallery" data-title="Project 1" class="galleryItem d-block">
-            <img src="img/c1.jpg" alt="Project 1" class="d-block">
-            <span class="galleryOverlay"></span>
-            <span class="galleryHoverContent">
+            <img src="img/c1.jpg" alt="Project 1" class="img-fluid radiusImage">
+            <div class="galleryContent">
               <span class="galleryTitle">Project 1</span>
               <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
-            </span>
+            </div>
+            <div class="galleryOverlay"></div>
           </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="img/c2.jpg" data-lightbox="gallery" data-title="Project 2" class="galleryItem d-block">
-            <img src="img/c2.jpg" alt="Project 2" class="d-block">
-            <span class="galleryOverlay"></span>
-            <span class="galleryHoverContent">
+            <img src="img/c2.jpg" alt="Project 2" class="img-fluid radiusImage">
+            <div class="galleryContent">
               <span class="galleryTitle">Project 2</span>
               <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
-            </span>
+            </div>
+            <div class="galleryOverlay"></div>
           </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="img/c3.jpg" data-lightbox="gallery" data-title="Project 3" class="galleryItem d-block">
-            <img src="img/c3.jpg" alt="Project 3" class="d-block">
-            <span class="galleryOverlay"></span>
-            <span class="galleryHoverContent">
+            <img src="img/c3.jpg" alt="Project 3" class="img-fluid radiusImage">
+            <div class="galleryContent">
               <span class="galleryTitle">Project 3</span>
               <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
-            </span>
+            </div>
+            <div class="galleryOverlay"></div>
           </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="img/c4.jpg" data-lightbox="gallery" data-title="Project 4" class="galleryItem d-block">
-            <img src="img/c4.jpg" alt="Project 4" class="d-block">
-            <span class="galleryOverlay"></span>
-            <span class="galleryHoverContent">
+            <img src="img/c4.jpg" alt="Project 4" class="img-fluid radiusImage">
+            <div class="galleryContent">
               <span class="galleryTitle">Project 4</span>
               <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
-            </span>
+            </div>
+            <div class="galleryOverlay"></div>
           </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="img/c5.jpg" data-lightbox="gallery" data-title="Project 5" class="galleryItem d-block">
-            <img src="img/c5.jpg" alt="Project 5" class="d-block">
-            <span class="galleryOverlay"></span>
-            <span class="galleryHoverContent">
+            <img src="img/c5.jpg" alt="Project 5" class="img-fluid radiusImage">
+            <div class="galleryContent">
               <span class="galleryTitle">Project 5</span>
               <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
-            </span>
+            </div>
+            <div class="galleryOverlay"></div>
           </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="img/c6.jpg" data-lightbox="gallery" data-title="Project 6" class="galleryItem d-block">
-            <img src="img/c6.jpg" alt="Project 6" class="d-block">
-            <span class="galleryOverlay"></span>
-            <span class="galleryHoverContent">
+            <img src="img/c6.jpg" alt="Project 6" class="img-fluid radiusImage">
+            <div class="galleryContent">
               <span class="galleryTitle">Project 6</span>
               <span class="galleryDesc">Quisque ut lectus, eros et, sed commodo risus.</span>
-            </span>
+            </div>
+            <div class="galleryOverlay"></div>
           </a>
         </div>
       </div>
@@ -353,7 +356,7 @@
     </div>
   </section>
 
-  <!-- ── Progress Section ── -->
+  <!-- Progress Section -->
   <section class="progressSection py-5" id="progress">
     <div class="py-5">
       <div class="container py-lg-5 py-md-4 py-2">
@@ -395,7 +398,7 @@
     </div>
   </section>
 
-  <!-- ── Testimonials Section (Owl Carousel) ── -->
+  <!-- Testimonials Section -->
   <section class="testimonialsSection py-5" id="testimonials">
     <div class="py-5">
       <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
@@ -477,7 +480,7 @@
     </div>
   </section>
 
-  <!-- ── Blog Posts Section ── -->
+  <!-- Blog Posts Section -->
   <section class="blogSection py-5">
     <div class="container py-lg-5 py-md-4 py-2">
       <h5 class="titleSmall text-center mb-1">Latest News</h5>
@@ -504,7 +507,7 @@
                 <ul class="blogMeta">
                   <li>
                     <span class="metaValue">by</span>
-                    <a href="#">W3Layouts</a>
+                    <a href="#">CorpVision</a>
                   </li>
                 </ul>
                 <div class="date">
@@ -535,7 +538,7 @@
                 <ul class="blogMeta">
                   <li>
                     <span class="metaValue">by</span>
-                    <a href="#">W3Layouts</a>
+                    <a href="#">CorpVision</a>
                   </li>
                 </ul>
                 <div class="date">
@@ -566,7 +569,7 @@
                 <ul class="blogMeta">
                   <li>
                     <span class="metaValue">by</span>
-                    <a href="#">W3Layouts</a>
+                    <a href="#">CorpVision</a>
                   </li>
                 </ul>
                 <div class="date">
@@ -580,7 +583,7 @@
     </div>
   </section>
 
-  <!-- ── Newsletter Section ── -->
+  <!-- Newsletter Section -->
   <section class="newsletterSection py-5" id="subscribe">
     <div class="container py-md-5 py-sm-4 py-2">
       <div class="bottomInfo">
@@ -597,7 +600,7 @@
     </div>
   </section>
 
-  <!-- ── Footer ── -->
+  <!-- Footer -->
   <footer class="footerMain">
     <div class="py-5">
       <div class="container py-md-4">
@@ -611,11 +614,9 @@
               </a>
             </div>
             <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
-            <div class="socialFooter mt-md-4 mt-3">
-              <a href="#"><span class="fa fa-facebook"></span></a>
-              <a href="#"><span class="fa fa-twitter"></span></a>
-              <a href="#"><span class="fa fa-instagram"></span></a>
-              <a href="#"><span class="fa fa-linkedin"></span></a>
+            <div class="headerControl ms-lg-3">
+              <a href="#search" class="searchHeader me-3" title="Search"><span class="fa fa-search"></span></a>
+              <a href="javascript:void(0)" class="themeHeader me-3" id="themeBtn" title="Toggle theme"><span class="fa fa-moon-o" id="themeIcon"></span></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pe-lg-5 mb-5 mb-lg-0">
@@ -649,7 +650,7 @@
     <section class="copyrightSection text-center">
       <div class="container">
         <p>&copy; 2026 Corp Vision All Rights Reserved |
-          Designed by <a href="#">W3Layouts.</a>
+          Designed by <a href="#">CorpVision.</a>
         </p>
       </div>
       <button onclick="topFunction()" id="moveTop" title="Go to top">
@@ -658,19 +659,13 @@
     </section>
   </footer>
 
-  <!-- ── Scripts ── -->
-  <!-- jQuery (needed for Owl Carousel & Lightbox) -->
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- Bootstrap 5 Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Owl Carousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- Lightbox -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <!-- Custom JS -->
   <script src="js/main.js"></script>
 
-  <!-- Owl Carousel Init -->
   <script>
     $(document).ready(function () {
       $("#owlTestimonials").owlCarousel({
@@ -689,7 +684,6 @@
       });
     });
 
-    // Lightbox options
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true

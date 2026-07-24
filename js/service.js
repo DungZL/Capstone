@@ -1,31 +1,28 @@
-/* ── Service Page JavaScript ── */
+
 
 $(document).ready(function () {
 
-  // 1. Fixed Header on Scroll
   $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 80) {
+    var scrollPosition = $(window).scrollTop();
+    if (scrollPosition >= 80) {
       $("#siteHeader").addClass("navFixed");
     } else {
       $("#siteHeader").removeClass("navFixed");
     }
 
-    // Move top button visibility
     scrollFunction();
   });
 
-  // 2. Dark / Light Mode Toggle
   var currentTheme = localStorage.getItem("theme") || "light";
   if (currentTheme === "dark") {
     $("html").attr("data-theme", "dark");
     $("#themeIcon").removeClass("fa-moon-o").addClass("fa-sun-o");
   }
 
-  $("#themeToggleBtn").on("click", function (e) {
-    e.preventDefault();
-    var theme = $("html").attr("data-theme");
-    if (theme === "dark") {
+  $("#themeBtn").on("click", function (event) {
+    event.preventDefault();
+    var activeTheme = $("html").attr("data-theme");
+    if (activeTheme === "dark") {
       $("html").attr("data-theme", "light");
       localStorage.setItem("theme", "light");
       $("#themeIcon").removeClass("fa-sun-o").addClass("fa-moon-o");
@@ -36,40 +33,37 @@ $(document).ready(function () {
     }
   });
 
-  // 3. Search Modal Overlay Toggle
-  $("#searchBtn").on("click", function (e) {
-    e.preventDefault();
+  $("#searchBtn").on("click", function (event) {
+    event.preventDefault();
     $("#searchOverlay").addClass("active");
-    $(".search-input-field").focus();
+    $(".searchInput").focus();
   });
 
-  $("#searchCloseBtn").on("click", function () {
+  $("#searchClose").on("click", function () {
     $("#searchOverlay").removeClass("active");
   });
 
-  $(document).on("keydown", function (e) {
-    if (e.key === "Escape") {
+  $(document).on("keydown", function (event) {
+    if (event.key === "Escape") {
       $("#searchOverlay").removeClass("active");
     }
   });
 
-  // 4. Contact Form Submission
-  $("#contactQuoteForm").on("submit", function (e) {
-    e.preventDefault();
+  $("#contactForm").on("submit", function (event) {
+    event.preventDefault();
     alert("Thank you! Your request has been received. We will contact you shortly.");
     this.reset();
   });
 
 });
 
-// 5. Back to Top Functions
 function scrollFunction() {
-  var moveTopBtn = document.getElementById("moveTop");
-  if (moveTopBtn) {
+  var topBtn = document.getElementById("moveTop");
+  if (topBtn) {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      moveTopBtn.style.display = "block";
+      topBtn.style.display = "block";
     } else {
-      moveTopBtn.style.display = "none";
+      topBtn.style.display = "none";
     }
   }
 }
@@ -80,3 +74,5 @@ function topFunction() {
     behavior: "smooth"
   });
 }
+
+

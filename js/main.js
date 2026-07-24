@@ -1,11 +1,11 @@
-// ── Scroll to Top Button ──
+
 window.addEventListener('scroll', function () {
-  var moveTop = document.getElementById('moveTop');
-  if (moveTop) {
+  var topBtn = document.getElementById('moveTop');
+  if (topBtn) {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      moveTop.style.display = 'block';
+      topBtn.style.display = 'block';
     } else {
-      moveTop.style.display = 'none';
+      topBtn.style.display = 'none';
     }
   }
 });
@@ -14,29 +14,26 @@ function topFunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ── Navbar Scroll Effect ──
 window.addEventListener('scroll', function () {
-  var header = document.getElementById('siteHeader');
-  if (header) {
+  var siteHeader = document.getElementById('siteHeader');
+  if (siteHeader) {
     if (window.scrollY >= 80) {
-      header.classList.add('navFixed');
+      siteHeader.classList.add('navFixed');
     } else {
-      header.classList.remove('navFixed');
+      siteHeader.classList.remove('navFixed');
     }
   }
 });
 
-// ── Navbar Toggle Body Scroll Lock ──
 document.addEventListener('DOMContentLoaded', function () {
-  var toggler = document.querySelector('.navbar-toggler');
-  if (toggler) {
-    toggler.addEventListener('click', function () {
+  var navbarToggler = document.querySelector('.navbar-toggler');
+  if (navbarToggler) {
+    navbarToggler.addEventListener('click', function () {
       document.body.classList.toggle('noScroll');
     });
   }
 });
 
-// ── Gallery Lightbox (using Bootstrap Modal) ──
 document.addEventListener('DOMContentLoaded', function () {
   var lightboxImg = document.getElementById('lightboxImg');
   var lightboxTitle = document.getElementById('lightboxTitle');
@@ -44,13 +41,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (lightboxModal) {
     lightboxModal.addEventListener('show.bs.modal', function (event) {
-      var trigger = event.relatedTarget;
-      if (trigger) {
-        var imgSrc = trigger.getAttribute('data-img');
-        var title = trigger.getAttribute('data-title');
+      var triggerBtn = event.relatedTarget;
+      if (triggerBtn) {
+        var imgSrc = triggerBtn.getAttribute('data-img');
+        var titleText = triggerBtn.getAttribute('data-title');
         if (lightboxImg) lightboxImg.src = imgSrc;
-        if (lightboxTitle) lightboxTitle.textContent = title;
+        if (lightboxTitle) lightboxTitle.textContent = titleText;
       }
     });
   }
 });
+
+
