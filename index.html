@@ -8,7 +8,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Bootstrap 5 CSS -->
+  <!-- Bootstrap 5.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -34,9 +34,7 @@
           </a>
         </h1>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarContent" aria-controls="navbarContent"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -56,25 +54,25 @@
                 Pages
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#blog">Blog Posts</a></li>
-                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                <li><a class="dropdown-item" href="landing.html">Landing Page</a></li>
-                <li><a class="dropdown-item" href="elements.html">Elements Page</a></li>
+                <li><a class="dropdown-item" href="">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="">404 Page</a></li>
+                <li><a class="dropdown-item" href="">Landing Page</a></li>
+                <li><a class="dropdown-item" href="">Elements Page</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#subscribe" class="nav-link">Contact</a>
+              <a href="" class="nav-link">Contact</a>
             </li>
           </ul>
           <!-- Search & Dark/Light Mode Icons -->
           <div class="header-search-theme-control d-flex align-items-center ms-lg-3">
             <div class="search-right px-2">
-              <a href="#search" class="search-btnHeader text-white" title="Search">
+              <a href="" class="search-btnHeader text-white" title="Search">
                 <span class="fa fa-search" aria-hidden="true"></span>
               </a>
             </div>
             <div class="theme-wrapper px-2">
-              <a href="#theme-toggle" class="theme-toggle-btnHeader text-white" title="Toggle Dark/Light Mode">
+              <a href="" class="theme-toggle-btnHeader text-white" title="Toggle Dark/Light Mode">
                 <span class="fa fa-moon-o" aria-hidden="true"></span>
               </a>
             </div>
@@ -84,15 +82,9 @@
     </div>
   </header>
 
-  <!-- ── Banner Slider (Bootstrap Carousel) ── -->
+  <!-- ── Banner Slider── -->
   <div class="bannerWrap">
     <div id="bannerCarousel" class="carousel slide bannerCarousel" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>
-      </div>
       <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url('./img/b1.jpg');">
@@ -140,15 +132,25 @@
         </div>
       </div>
       <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+      <div class="banner-carousel-controls">
+        <button class="carousel-control-prev slick-prev slick-arrow" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev" aria-label="Previous">
+          <span class="fa fa-arrow-left" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next slick-next slick-arrow" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next" aria-label="Next">
+          <span class="fa fa-arrow-right" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
-    
-  <!-- ── //Banner Slider ── -->
+
+    <!-- Animated Wave Shape -->
+    <div class="hero-overlay-shape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <path fill-opacity="1">
+          <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
+        </path>
+      </svg>
+    </div>
+  </div>
 
   <!-- ── About Section ── -->
   <section class="homeAbout py-5" id="about">
