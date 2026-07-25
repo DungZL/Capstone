@@ -434,7 +434,20 @@ ul {
   transform: scale(1.1);
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
 }
-
+.playBtnOut {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #008834;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #008834;
+  font-size: 18px;
+  transition: all 0.35s ease;
+  background: transparent;
+  cursor: pointer;
+}
 /* Features Cards */
 .areaBox {
   display: flex;
